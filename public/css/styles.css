@@ -8,6 +8,7 @@ html {
 body{
     background-color: rgb(0, 0, 0);
     background-size: 1px 48px;
+    background-repeat: repeat-x;
     display: block;
     font-family: Verdana, Arial;
     font-size: 11px;
@@ -18,16 +19,28 @@ body{
     text-align: center;
 }
 
-#header{
-    background-color: rgb(250, 250, 250);
-    background-size: 179px 32px;
-    height: 36px;
+#mangatari{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     text-align: left;
+    width: 1060px;
+}
+
+#header{
+    background-color: rgb(250, 250, 250);
+    background-image: url(https://www.coolgenerator.com/Data/Textdesign/202211/a8219f3a43a121a6e508e9f95634dd42.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    height: 36px;
+    padding: 10px 0 2px ;
+    position: relative;
 }
 
 #header-menu{
-    display: table;
+    display: flex;
+    justify-content: center;
     height: 30px;
     position: absolute;
     right: 0px;
@@ -38,53 +51,31 @@ body{
     background-color: aqua;
 }
 
-#header-separator {
-    border-collapse: separate;
-    display: table-cell;
-    height: 30px;
-    padding-left: 4px;
-    position: relative;
-    vertical-align: top;
-    width: 30px;
-}
-
-#fa-cart-shopping{
-    background-size: 15px 15px;
-    border-collapse: separate;
+.fa-cart-plus{
     color: rgb(46, 81, 162);
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
     height: 15px;
-    line-height: 30px;
-    text-align: center;
-    text-decoration-thickness: auto;
-    text-rendering: auto;
     user-select: none;
     vertical-align: middle;
-    width: 15px;
     
 
 }
-#fa-user {
-    background-size: 15px 15px;
-    border-collapse: separate;
+.fa-user {
     color: rgb(46, 81, 162);
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
     height: 15px;
-    line-height: 30px;
-    text-align: center;
-    text-decoration-thickness: auto;
-    text-rendering: auto;
     user-select: none;
     vertical-align: middle;
-    width: 15px;
+}
+
+#search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #logos {
