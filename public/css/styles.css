@@ -86,3 +86,12 @@ body{
     vertical-align: middle;
     width: 15px;
 }
+
+#logos {
+    text-align: center;
+    margin-left: 70%;
+}
+
+#in-line{
+    display: inline;
+}
