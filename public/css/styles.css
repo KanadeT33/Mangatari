@@ -1,82 +1,116 @@
-html {
-    width: 100%;
-    height: 4000px;
+* {
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: rgb(0, 0, 0);
-    background-size: 1px 48px;
-    background-repeat: repeat-x;
-    display: block;
-    font-family: Verdana, Arial;
-    font-size: 11px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #mangatari{
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: left;
-    width: 1060px;
+    width: 100%;
 }
 
 #header{
     background-color: rgb(250, 250, 250);
-    background-image: url(https://www.coolgenerator.com/Data/Textdesign/202211/a8219f3a43a121a6e508e9f95634dd42.png);
-    background-position: 0;
-    background-repeat: no-repeat;
-    height: 36px;
-    padding: 10px 0 2px ;
-    position: relative;
 }
 
-#header-menu{
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    width: 386px;
-    z-index: 200;
-    
-    background-color: aqua;
-}
-
-.fa-cart-plus{
-    color: rgb(46, 81, 162);
-    cursor: pointer;
-    display: inline;
-    font-size: 24px;
-    height: 15px;
-    user-select: none;
-    vertical-align: middle;
-    
-
-}
-.fa-user {
-    color: rgb(46, 81, 162);
-    cursor: pointer;
-    display: inline;
-    font-size: 24px;
-    height: 15px;
-    user-select: none;
-    vertical-align: middle;
+#mangatari-logo{
+    width: 50%;
+    padding-top: 3vw;
 }
 
 #search-bar{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 2vw;
 }
+
+#search{
+    width: 70%;
+    border: solid 1px black;
+    border-radius: 50px;
+    height: 3vw;  
+}
+
+#header-menu{   
+    display: flex;
+    justify-content: center;
+}
+
+.link-text{
+    text-decoration: none;
+    font-size: 4vw;
+    color: rgb(46, 81, 162);
+    
+}
+
+.link-text:hover{
+    text-decoration: underline;
+    color: rgba(46, 81, 162, 0.5);
+}
+
+.fa-cart-plus{
+    color: rgb(46, 81, 162);
+    cursor: pointer;
+    font-size: 5vw;
+    vertical-align: middle;
+    
+}
+.fa-user {
+    color: rgb(46, 81, 162);
+    cursor: pointer;
+    font-size: 5vw;
+    vertical-align: middle;
+}
+
+#nav-bar{
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 3vw;
+    font-size: 4vw;
+    border: none;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 3vw;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 30vw;
+    box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font-size: 4vw;
+    color: black;
+    padding: 1vw 3vw;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
 
 #logos {
     text-align: center;
@@ -94,5 +128,4 @@ body{
     padding-top: 3vh; 
     position: fixed;
     bottom:0px; 
-    margin-left: 2500 px ;
 }
