@@ -86,3 +86,13 @@ body{
 #in-line{
     display: inline;
 }
+
+#footer{
+    background-color: rgb(238, 238, 238); 
+    width: 100vw; 
+    padding-left: 2vw; 
+    padding-top: 3vh; 
+    position: fixed;
+    bottom:0px; 
+    margin-left: 2500 px ;
+}
