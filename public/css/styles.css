@@ -1,98 +1,152 @@
 html {
-    width: 100%;
-    height: 4000px;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: rgb(0, 0, 0);
-    background-size: 1px 48px;
-    background-repeat: repeat-x;
-    display: block;
-    font-family: Verdana, Arial;
-    font-size: 11px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: center;
+body {
+  background-color: rgb(0, 0, 0);
+  background-size: 1px 48px;
+  background-repeat: repeat-x;
+  display: flex;
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  flex-direction: column;
 }
 
-#mangatari{
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: left;
-    width: 1060px;
+#mangatari {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: left;
+  width: 1060px;
 }
 
-#header{
-    background-color: rgb(250, 250, 250);
-    background-image: url(https://www.coolgenerator.com/Data/Textdesign/202211/a8219f3a43a121a6e508e9f95634dd42.png);
-    background-position: 0;
-    background-repeat: no-repeat;
-    height: 36px;
-    padding: 10px 0 2px ;
-    position: relative;
+#header {
+  background-color: rgb(250, 250, 250);
+  background-image: url(https://www.coolgenerator.com/Data/Textdesign/202211/a8219f3a43a121a6e508e9f95634dd42.png);
+  background-position: 0;
+  background-repeat: no-repeat;
+  height: 36px;
+  padding: 10px 0 2px;
+  position: relative;
 }
 
-#header-menu{
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    width: 386px;
-    z-index: 200;
-    
-    background-color: aqua;
+#header-menu {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 386px;
+  z-index: 200;
+
+  background-color: aqua;
 }
 
-.fa-cart-plus{
-    color: rgb(46, 81, 162);
-    cursor: pointer;
-    display: inline;
-    font-size: 24px;
-    height: 15px;
-    user-select: none;
-    vertical-align: middle;
-    
-
+.fa-cart-plus {
+  color: rgb(46, 81, 162);
+  cursor: pointer;
+  display: inline;
+  font-size: 24px;
+  height: 15px;
+  user-select: none;
+  vertical-align: middle;
 }
 .fa-user {
-    color: rgb(46, 81, 162);
-    cursor: pointer;
-    display: inline;
-    font-size: 24px;
-    height: 15px;
-    user-select: none;
-    vertical-align: middle;
+  color: rgb(46, 81, 162);
+  cursor: pointer;
+  display: inline;
+  font-size: 24px;
+  height: 15px;
+  user-select: none;
+  vertical-align: middle;
 }
 
-#search-bar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #logos {
-    text-align: center;
-    margin-left: 70%;
+  text-align: center;
+  margin-left: 70%;
 }
 
-#in-line{
-    display: inline;
+#in-line {
+  display: inline;
+}
+.main-cointainer {
+  position: relative;
 }
 
-#footer{
-    background-color: rgb(238, 238, 238); 
-    width: 100vw; 
-    padding-left: 2vw; 
-    padding-top: 3vh; 
-    position: fixed;
-    bottom:0px; 
-    margin-left: 2500 px ;
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e7ecef;
+  position: relative;
+  bottom: 0;
+  height: 100px;
+}
+.big-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.right-logos {
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.left-text ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+.left-text ul li a {
+  border-bottom: none;
+}
+
+.right-logos ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.under-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1vh 0;
+  align-items: flex-end;
+  height: 100vh;
+}
+.main-section {
+  background-color: #a3cef1;
+  flex: 1;
+  min-height: 100vh;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #060185;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
